@@ -92,7 +92,7 @@
            
 
             var loader2 = new THREE.FBXLoader();
-            loader2.load('models/caminar.fbx', function(object2) {
+            loader2.load('models/Breakdance.fbx', function(object2) {
                 object2.mixer = new THREE.AnimationMixer(object2);
                 mixers.push(object2.mixer);
                 var action = object2.mixer.clipAction(object2.animations[0]);
@@ -104,13 +104,13 @@
                     }
                 });
                 object2.scale.set(1, 1, 1);
-                object2.Name = 'personaje';
+                object2.Name = 'Breakdance';
                 scene.add(object2);
 
             });
             // model two
 
-            var objeto = scene.getObjectByName("personaje");
+            var objeto = scene.getObjectByName("Breakdance");
 
 
             scene.add(objeto);
